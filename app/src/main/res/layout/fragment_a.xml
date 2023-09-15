@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".FragmentA">
+
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="70sp" />
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="onIncreaseClick"
+            android:id="@+id/btn_plus"
+            android:layout_width="100sp"
+            android:layout_height="80sp"
+            android:text="+1"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/btn_next_fragment"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="next fragment"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:onClick="onDecreaseClick"
+            android:id="@+id/btn_minus"
+            android:layout_width="100sp"
+            android:layout_height="80sp"
+            android:text="-1"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
